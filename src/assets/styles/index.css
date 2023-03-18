@@ -146,6 +146,7 @@ main section#home p {
 main section#home p#home-title {
    font-size: 2rem;
    font-weight: 900;
+   text-align: center;
 }
 
 /*? Configuração do botão do título da seção home */
