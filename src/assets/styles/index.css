@@ -1,0 +1,219 @@
+/*! Importação de Configurações Externas */
+/** Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,400&display=swap');
+
+/** Importações de ícone css.gg */
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/close.css');
+
+/*! Configurações da página */
+/** Configuração global da página */
+* {
+   margin: 0px;
+   padding: 0px;
+   font-size: medium;
+   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/** Configuração do corpo da página */
+body {
+   background-color: #FFF6F6;
+}
+
+/** Configurações do cabeçalho da página */
+/*? Configuração global do cabeçalho */
+header {
+   display: flex;
+   justify-content: space-between;
+   height: 10vh;
+   padding: 1rem;
+}
+
+/*? Configuração da divisão da logo */
+header div#logo {
+   width: 20%;
+}
+
+/*? Configuração da imagem na divisão da logo */
+header div#logo img {
+   width: 4.5rem;
+}
+
+/*? Configuração da legenda na divisão da logo */
+header div#logo figcaption {
+   display: none;
+}
+
+/*? Configuração da divisão do menu hamburguer */
+header div#nav-hamburguer {
+   display: flex;
+   align-items: center;
+}
+
+/*? Configuração do botão do menu hamburguer */
+header div#nav-hamburguer button {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   width: 2.5rem;
+   height: 2.5rem;
+   background-color: transparent;
+   border: none;
+   border-radius: 0.5rem;
+}
+
+/*? Configuração do botão do menu hamburguer com hover */
+header div#nav-hamburguer button:hover {
+   background-color: #EEEDED;
+}
+
+/*? Configuração do ícone do menu hamburguer */
+header div#nav-hamburguer button i {
+   color: #040303;
+}
+
+/*? Configuração da divisão do menu */
+header div#nav-menu {
+   display: none;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   width: 100vw;
+   height: 80vh;
+}
+
+/*? Configuração da lista do menu */
+header div#nav-menu ul {
+   width: 100%;
+   height: 100%;
+   background-color: #FFF6F6;
+   list-style: none;
+}
+
+/*? Configuração dos links de lista do menu */
+header div#nav-menu li a {
+   display: block;
+   margin: 1rem 0.75rem;
+   padding: 0.5rem 1rem;
+   border-radius: 0.5rem;
+   font-weight: 500;
+   color: #040303;
+   text-decoration: none;
+}
+
+/*? Configuração dos links de lista do menu em hover */
+header div#nav-menu li a:hover {
+   background-color: #EEEDED;
+}
+
+/** Configurações do corpo principal da página */
+/*? Configuração global do corpo principal da página */
+main {
+   width: 100vw;
+}
+
+/*? Configuração da seção home */
+main section#home {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 75vh;
+}
+
+/*? Configuração da figura da seção home */
+main section#home figure {
+   text-align: center;
+}
+
+/*? Configuração da imagem da seção home */
+main section#home figure img {
+   width: 40%;
+}
+
+/*? Configuração legenda da figura da seção home */
+main section#home figure figcaption {
+   display: none;
+}
+
+/*? Configuração padrão do parágrafo da seção home */
+main section#home p {
+   display: block;
+   font-style: italic;
+}
+
+/*? Configuração do título da seção home */
+main section#home p#home-title {
+   font-size: 2rem;
+   font-weight: 900;
+}
+
+/*? Configuração do botão do título da seção home */
+main section#home p#home-title button {
+   text-decoration-thickness: 0.25rem;
+   background-color: transparent;
+   cursor: pointer;
+   border: none;
+   font-size: 2rem;
+   font-style: italic;
+   font-weight: 900;
+   color: #3E8989;
+   text-decoration: underline;
+}
+
+/*? Configuração do botão do título da seção home  em hover */
+main section#home p#home-title button:hover {
+   color: #731963;
+}
+
+/*? Configuração do conteúdo da seção home */
+main section#home p#home-content {
+   width: 80%;
+   background-color: #3E8989;
+   font-size: 1.5rem;
+   color: #EEEDED;
+}
+
+/*? Configuração da span no conteúdo da seção home */
+main section#home p#home-content span {
+   font-size: 1.5rem;
+   color: #040303;
+}
+
+/** Configurações media query */
+/*? Configurações para desktop */
+@media (min-width: 768px) {
+   header div#nav-hamburguer {
+         display: none;
+   }
+
+   /*? Menu navbar */
+   header div#nav-menu {
+         display: block !important;
+         position: relative;
+         width: 75vw;
+         height: 100%;
+   }
+
+   /*? Lista não ordenada do menu navbar */
+   header div#nav-menu ul {
+         display: flex;
+         justify-content: end;
+   }
+
+   /*? Âncoras do menu navbar */
+   header div#nav-menu li a {
+         display: block;
+         margin: 1rem 0.75rem;
+         padding: 0.5rem 1rem;
+         border-radius: 0.5rem;
+         font-weight: 500;
+         color: #040303;
+         text-decoration: none;
+   }
+
+   /*? Conteúdo da seção home */
+   main section#home p#home-content {
+         width: 50%;
+   }
+}
