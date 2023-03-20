@@ -1,97 +1,192 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+   <!--! Head do portfólio -->
+   <head>
+      <!--* Configurações padrões -->
+      <title>Pedro Lucas | Desenvolvedor web</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 
-<!--! Head do portfólio -->
-<head>
-   <!--* Configurações padrões -->
-   <title>Pedro Lucas | Desenvolvedor web</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+      <!--* Configurações de meta-tags -->
+      <meta name="author" content="Pedro Lucas" />
+      <meta
+         name="description"
+         content="Portfólio digital do programador web Pedro Lucas."
+      />
+      <meta name="keywords" content="portfólio, programador, web" />
 
-   <!--* Configurações de meta-tags -->
-   <meta name="author" content="Pedro Lucas">
-   <meta name="description" content="Portifólio digital do programador web Pedro Lucas.">
-   <meta name="keywords" content="portfólio, programador, web">
+      <!--* Configurações de estilização -->
+      <link
+         rel="shortcut icon"
+         href="./assets/images/favicon.ico"
+         type="image/x-icon"
+      />
+      <link rel="stylesheet" href="./assets/styles/index.css" />
+   </head>
 
-   <!--* Configurações de estilização -->
-   <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-   <link rel="stylesheet" href="./assets/styles/index.css">
-</head>
+   <!--! Corpo da página -->
+   <body>
+      <!--* Cabeçalho da página -->
+      <header>
+         <!--? Divisão de título -->
+         <div id="logo">
+            <a href="#">
+               <h1>Pedro Lucas | Desenvolvedor web</h1>
+               <figure>
+                  <img
+                     src="./assets/images/logo.png"
+                     alt="Emoticons de homem tecnológico (logo da página)"
+                  />
+                  <figcaption>
+                     Emoticons de homem tecnológico (logo da página)
+                  </figcaption>
+               </figure>
+            </a>
+         </div>
 
-<!--! Corpo da página -->
-<body>
-   <!--* Cabeçalho da página -->
-   <header>
-      <!--? Divisão de título -->
-      <div id="logo">
-         <a href="#">
+         <!--? Menu hambúrguer da página (mobile) -->
+         <div id="nav-hamburguer">
+            <button id="buttonMenu" onclick="toggleMenu()">
+               <i id="iconMenu" class="gg-menu"></i>
+            </button>
+         </div>
+
+         <!--? Divisão do menu da página -->
+         <div id="nav-menu">
+            <navbar>
+               <ul>
+                  <li>
+                     <a href="#">Início</a>
+                  </li>
+                  <li>
+                     <a href="#informations">Acadêmico e Profissional</a>
+                  </li>
+                  <li>
+                     <a href="#">Projetos</a>
+                  </li>
+                  <li>
+                     <a href="#">Contato</a>
+                  </li>
+               </ul>
+            </navbar>
+         </div>
+      </header>
+
+      <!--* Corpo da página -->
+      <main>
+         <!--? Divisão de introdução -->
+         <section id="home">
+            <!--? Imagem da seção -->
             <figure>
-               <img src="./assets/images/logo.png" alt="Emoticom de homem tecnólogico (logo da página)">
-               <figcaption>Emoticom de homem tecnólogico (logo da página)</figcaption>
+               <img
+                  src="./assets/images/monster.png"
+                  alt="Emoticons de monstro pixelizado"
+               />
+               <figcaption>Emoticons de monstro pixelizado</figcaption>
             </figure>
-         </a>
-      </div>
 
-      <!--? Menu hamburguer da página (mobile) -->
-      <div id="nav-hamburguer">
-         <button id="buttonMenu" onclick="toggleMenu()">
-            <i id="iconMenu" class="gg-menu"></i>
-         </button>
-      </div>
+            <!--? Título da seção -->
+            <h2 id="home-title" class="home-date">
+               Desenvolvedor para a
+               <button
+                  onclick="urlRandomized()"
+                  title="Alguns sites utilizados para o desenvolvimento desse projeto. ;D"
+               >
+                  internet</button
+               >!
+            </h2>
 
-      <!--? Divisão do menu da página -->
-      <div id="nav-menu">
-         <navbar>
-            <ul>
-               <li>
-                  <a href="#">Início</a>
-               </li>
-               <li>
-                  <a href="#">Acadêmico</a>
-               </li>
-               <li>
-                  <a href="#">Profissional</a>
-               </li>
-               <li>
-                  <a href="#">Projetos</a>
-               </li>
-               <li>
-                  <a href="#">Contato</a>
-               </li>
-            </ul>
-         </navbar>
-      </div>
-   </header>
+            <!--? Conteúdo da seção -->
+            <p id="home-content" class="home-data">
+               Desenvolvo soluções para o seu problema de maneira simples e
+               organizada
+               <span id="home-bar">/</span>
+            </p>
+         </section>
+         <!--? Seção de dados pessoais -->
+         <section id="informations">
+            <!--? Divisão com os botões de seleção das informações -->
+            <div id="select-information">
+               <div
+                  id="select-academic"
+                  class="selected"
+                  onclick="alterSelectedInformations(this)"
+               >
+                  Acadêmico
+               </div>
+               <div
+                  id="select-professional"
+                  onclick="alterSelectedInformations(this)"
+               >
+                  Profissional
+               </div>
+            </div>
+            <!--? Divisão com o conteúdo das informações -->
+            <div id="informations-content">
+               <!--? Divisão com a imagem da seção -->
+               <div id="informations-picture">
+                  <figure>
+                     <img
+                        src="./assets/images/personal.jpg"
+                        alt="Imagem pessoal do desenvolvedor da página."
+                     />
+                     <figcaption>
+                        Imagem pessoal do desenvolvedor da página.
+                     </figcaption>
+                  </figure>
+               </div>
+               <!--? Divisão com os dados do meio acadêmico -->
+               <div id="academic" class="list-of-informations">
+                  <ul>
+                     <li>
+                        Formado em Técnico em Informática na
+                        <abbr title="Instituto Federal do Rio Grande do Norte"
+                           >IFRN</abbr
+                        >, Campus Avançado Parelhas (2019-2023).
+                     </li>
+                     <li>
+                        Estudante de Ciência da Computação na
+                        <abbr
+                           title="Universidade Federal do Rio Grande do Norte"
+                        >
+                           UFRN </abbr
+                        >, Campus Natal (2023-2026).
+                     </li>
+                     <li>
+                        Multi-medalhista da
+                        <abbr
+                           title="Olimpíada Brasileira de Matemática das Escolas Públicas"
+                           >OBMEP</abbr
+                        >.
+                     </li>
+                     <li>
+                        Apresentação de poster no
+                        <abbr title="Congresso Nacional de Educação"
+                           >CONEDU</abbr
+                        >
+                        de 2022.
+                     </li>
+                  </ul>
+               </div>
+               <!--? Divisão com os dados do meio profissional -->
+               <div id="professional" class="list-of-informations display-none">
+                  <ul>
+                     <li>
+                        Bolsista em tutoria na disciplina de Fundamentos de
+                        Lógica e Algoritmo na
+                        <abbr title="Instituto Federal do Rio Grande do Norte"
+                           >IFRN</abbr
+                        >, Campus Avançado Parelhas (12.2020-05.2021).
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </section>
+      </main>
 
-   <!--* Corpo da página -->
-   <main>
-      <!--? Divisão de introdução -->
-      <section id="home">
-         <!--? Imagem da seção -->
-         <figure>
-            <img src="./assets/images/monster.png" alt="Emoticom de monstro pixalizado" />
-            <figcaption>Emoticom de monstro pixalizado</figcaption>
-         </figure>
-
-         <!--? Título da seção -->
-         <p id="home-title">
-            Desenvolvedor para a
-            <button onclick="urlRandomizer()" title="Alguns sites utilizados para o desenvolvimento desse projeto. ;D">
-               internet
-            </button>!
-         </p>
-
-         <!--? Conteúdo da seção -->
-         <p id="home-content">
-            Desenvolvo soluções para o seu problema de maneira simples e organizada
-            <span id="home-bar">/</span>
-         </p>
-      </section>
-   </main>
-
-   <!-- * Importação de Scripts -->
-   <script src="./assets/scripts/index.js"></script>
-   <script src="./assets/scripts/navbar.js"></script>
-</body>
-
+      <!-- * Importação de Scripts -->
+      <script src="./assets/scripts/index.js"></script>
+      <script src="./assets/scripts/navbar.js"></script>
+      <script src="./assets/scripts/selected.js"></script>
+   </body>
 </html>
