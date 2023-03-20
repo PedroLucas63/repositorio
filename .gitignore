@@ -1,3 +1,4 @@
 #! Configurações do Git Ignore
 #* Pastas e arquivos desnecessários
-/.vscode #? Visual Studio Code
+#? Visual Studio Code
+/.vscode
