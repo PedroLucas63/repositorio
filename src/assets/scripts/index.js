@@ -17,30 +17,32 @@ setInterval(() => {
 }, timePerPulse);
 
 //? Função que aleatoriza url a redirecionar o usuário
-function urlRandomizer() {
+function urlRandomized() {
    //? Lista de URL's a serem acessadas
-   const urls = ["https://coolors.co/",
+   const urls = [
+      "https://coolors.co/",
       "https://stackoverflow.com/",
       "https://emojipedia.org/",
-      "https://www.youtube.com/"];
+      "https://www.youtube.com/",
+   ];
 
    //? Define o índice do primeiro elemento de uma lista
-   const firstElementIndice = 0;
+   const firstElementIndex = 0;
 
-   //? Recebe um número aleatório entre o primeiro indice e o tamanho da lista
-   const numberRandomizer = randNumber(firstElementIndice, urls.length);
+   //? Recebe um número aleatório entre o primeiro índice e o tamanho da lista
+   const numberRandomized = randNumber(firstElementIndex, urls.length);
 
    //? Altera a localização da página para a url aleatória
-   window.location.href = urls[numberRandomizer];
+   window.location.href = urls[numberRandomized];
 }
 
 //? Função de randomizar um número a partir do tempo (random())
 function randNumber(init, end) {
    const timeNow = Date.now(); //? Tempo desde 1970 em milissegundos
    const quantNumbers = end - init; //? Recebe a quantidade de números
-   //? Recebe o resto da divisão do tempo atual com a quantidade de 
+   //? Recebe o resto da divisão do tempo atual com a quantidade de
    //? números e soma com o número inicial
-   const numberRandomizer = (timeNow % quantNumbers) + init;
+   const numberRandomized = (timeNow % quantNumbers) + init;
 
-   return numberRandomizer; //? Retorna o número randomizado
+   return numberRandomized; //? Retorna o número randomizado
 }

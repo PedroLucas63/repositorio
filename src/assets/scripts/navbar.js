@@ -8,7 +8,7 @@ function toggleMenu() {
    const navMenu = document.getElementById("nav-menu"); //? Menu navbar
    const acceptedDisplays = ["block", "none"]; //? Style Displays aceitos
 
-   //? Altera a classe do icone do menu com uma função externa
+   //? Altera a classe do ícone do menu com uma função externa
    changeClass(iconMenu, acceptedClasses);
    //? Altera o style display do menu com uma função externa
    changeDisplay(navMenu, acceptedDisplays);
