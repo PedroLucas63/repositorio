@@ -9,16 +9,16 @@
 /*! Configurações da página */
 /** Configuração global da página */
 * {
+   font-family: "Roboto", Arial, Helvetica, sans-serif;
+   font-size: medium;
    margin: 0px;
    padding: 0px;
-   font-size: medium;
-   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 html {
    margin: 0 auto;
-   min-width: 400px;
    max-width: 1500px;
+   min-width: 400px;
 }
 
 /** Configuração do corpo da página */
@@ -29,15 +29,15 @@ body {
 /** Configurações do cabeçalho da página */
 /*? Configuração global do cabeçalho */
 header {
-   top: 0;
+   align-items: center;
+   background-color: #fff6f6;
+   box-shadow: 0px -3px 10px 0px #040303;
    display: flex;
    flex-wrap: wrap;
-   position: sticky;
-   align-items: center;
-   padding: 0.2rem 1rem;
-   background-color: #fff6f6;
    justify-content: space-between;
-   box-shadow: 0px -3px 10px 0px #040303;
+   padding: 0.2rem 1rem;
+   position: sticky;
+   top: 0;
 }
 
 /*? Configuração da divisão da logo */
@@ -62,20 +62,20 @@ header div#logo figcaption {
 
 /*? Configuração da divisão do menu hambúrguer */
 header div#nav-hamburguer {
-   display: flex;
    align-items: center;
+   display: flex;
 }
 
 /*? Configuração do botão do menu hambúrguer */
 header div#nav-hamburguer button {
+   align-items: center;
+   background-color: transparent;
+   border-radius: 0.5rem;
    border: none;
    display: flex;
-   width: 2.5rem;
    height: 2.5rem;
-   align-items: center;
-   border-radius: 0.5rem;
    justify-content: center;
-   background-color: transparent;
+   width: 2.5rem;
 }
 
 /*? Configuração do botão do menu hambúrguer com hover */
@@ -91,26 +91,26 @@ header div#nav-hamburguer button i {
 /*? Configuração da divisão do menu */
 header div#nav-menu {
    display: none;
-   width: 100%;
    height: 100vh;
+   width: 100%;
 }
 
 /*? Configuração da lista do menu */
 header div#nav-menu ul {
-   width: 100%;
-   height: 100%;
    background-color: #fff6f6;
+   height: 100%;
    list-style: none;
+   width: 100%;
 }
 
 /*? Configuração dos links de lista do menu */
 header div#nav-menu li a {
+   border-radius: 0.5rem;
+   color: #040303;
    display: block;
+   font-weight: 500;
    margin: 1rem 0.75rem;
    padding: 0.5rem 1rem;
-   border-radius: 0.5rem;
-   font-weight: 500;
-   color: #040303;
    text-decoration: none;
 }
 
@@ -127,11 +127,11 @@ main {
 
 /*? Configuração da seção home */
 main section#home {
+   align-items: center;
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
    height: 75vh;
+   justify-content: center;
 }
 
 /*? Configuração da figura da seção home */
@@ -164,14 +164,14 @@ main section#home h2#home-title {
 
 /*? Configuração do botão do título da seção home */
 main section#home h2#home-title button {
-   text-decoration-thickness: 0.25rem;
    background-color: transparent;
-   cursor: pointer;
    border: none;
+   color: #111344;
+   cursor: pointer;
    font-size: 2rem;
    font-style: italic;
    font-weight: 900;
-   color: #111344;
+   text-decoration-thickness: 0.25rem;
    text-decoration: underline;
 }
 
@@ -182,27 +182,28 @@ main section#home h2#home-title button:hover {
 
 /*? Configuração do conteúdo da seção home */
 main section#home p#home-content {
-   width: 80%;
    background-color: #111344;
-   font-size: 1.5rem;
    color: #eeeded;
+   font-size: 1.5rem;
+   padding: 0rem 0.5rem;
+   width: 80%;
 }
 
 /*? Configuração da span no conteúdo da seção home */
 main section#home p#home-content span {
+   color: #353885;
    font-size: 1.5rem;
-   color: #040303;
 }
 
 /*? Configuração da seção de informações acadêmicas e profissionais */
 main section#informations {
+   align-items: center;
+   background-color: #111344;
+   border-radius: 2rem 2rem 0rem 0rem;
    box-shadow: 0px 0px 20px 5px #353885;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
-   background-color: #111344;
-   border-radius: 2rem 2rem 0rem 0rem;
 }
 
 /*? Configuração das divisões de informações */
@@ -219,34 +220,34 @@ main section#informations div#select-information {
 /*? Configuração das divisões de seletores */
 main section#informations div#select-information div {
    background-color: #07093b;
+   border: none;
+   color: #fff6f6;
+   font-size: 1.5rem;
+   margin: 2rem 0rem;
    padding: 1rem 2rem;
    text-align: center;
-   margin: 2rem 0rem;
    transition: 0.25s;
-   font-size: 1.5rem;
-   color: #fff6f6;
-   border: none;
    width: 30%;
 }
 
 /*? Configuração das divisões de seletores em hover */
 main section#informations div#select-information div:hover {
-   transition: 0.25s;
    background-color: #353885;
    color: #eeeded;
+   transition: 0.25s;
 }
 
 /*? Configuração das divisões de seletores selecionados */
 main section#informations div#select-information div.selected {
-   transition: 0.25s;
    background-color: #353885;
    color: #eeeded;
+   transition: 0.25s;
 }
 
 /*? Configuração da divisão de seleção acadêmica */
 main section#informations div#select-information div#select-academic {
-   border-right: 1px solid #111344;
    border-radius: 1rem 0rem 0rem 1rem;
+   border-right: 1px solid #111344;
 }
 
 /*? Configuração da divisão de seleção profissional */
@@ -257,10 +258,10 @@ main section#informations div#select-information div#select-professional {
 
 /*? Configuração da divisão de conteúdos selecionados */
 main section#informations div#informations-content {
+   align-items: center;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
    width: 75%;
 }
 
@@ -285,12 +286,12 @@ main
    div#informations-content
    div#informations-picture
    img {
+   border-radius: 100%;
+   box-shadow: 0px 0px 20px 5px #353885;
+   height: 15rem;
    object-fit: cover;
    object-position: 0rem 0rem;
-   box-shadow: 0px 0px 20px 5px #353885;
    width: 15rem;
-   height: 15rem;
-   border-radius: 100%;
 }
 
 /*? Configuração da legenda da imagem em conteúdos selecionados */
@@ -304,8 +305,9 @@ main
 
 /*? Configuração da divisão de lista de informações */
 main section#informations div#informations-content div.list-of-informations {
-   width: 100%;
    height: 15rem;
+   text-align: justify;
+   width: 100%;
 }
 
 /*? Configuração da lista na divisão de lista de informações */
@@ -320,9 +322,9 @@ main
    div.list-of-informations
    ul
    li {
-   font-size: 1.2rem;
    color: #fff6f6;
-   text-align: justify;
+   font-size: 1.2rem;
+   margin-bottom: 0.8rem;
 }
 
 /*? Configuração de abreviatura na divisão de lista de informações */
@@ -353,9 +355,9 @@ main
    /*? Menu navbar */
    header div#nav-menu {
       display: block !important;
+      height: 100%;
       position: relative;
       width: 75%;
-      height: 100%;
    }
 
    /*? Lista não ordenada do menu navbar */
@@ -366,12 +368,12 @@ main
 
    /*? Âncoras do menu navbar */
    header div#nav-menu li a {
+      border-radius: 0.5rem;
+      color: #040303;
       display: block;
+      font-weight: 500;
       margin: 1rem 0.75rem;
       padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
-      font-weight: 500;
-      color: #040303;
       text-decoration: none;
    }
 
@@ -393,5 +395,6 @@ main
    /*? Divisão da lista de informações */
    main section#informations div#informations-content div.list-of-informations {
       height: auto;
+      text-align: left;
    }
 }
