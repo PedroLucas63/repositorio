@@ -130,8 +130,9 @@ main div#home {
    align-items: center;
    display: flex;
    flex-direction: column;
-   height: 75vh;
+   height: auto;
    justify-content: center;
+   padding: 10rem 0rem;
 }
 
 /*? Configuração da figura da seção home */
@@ -271,21 +272,13 @@ main div#informations div#informations-content div#informations-picture {
 }
 
 /*? Configuração da figura em conteúdos selecionados */
-main
-   div#informations
-   div#informations-content
-   div#informations-picture
-   figure {
+main div#informations div#informations-content div#informations-picture figure {
    text-align: center;
 }
 
 /*? Configuração da imagem em conteúdos selecionados */
 
-main
-   div#informations
-   div#informations-content
-   div#informations-picture
-   img {
+main div#informations div#informations-content div#informations-picture img {
    border-radius: 100%;
    box-shadow: 0px 0px 20px 5px #353885;
    height: 15rem;
@@ -316,12 +309,7 @@ main div#informations div#informations-content div.list-of-informations ul {
 }
 
 /*? Configuração do item de lista na lista da divisão de lista de informações */
-main
-   div#informations
-   div#informations-content
-   div.list-of-informations
-   ul
-   li {
+main div#informations div#informations-content div.list-of-informations ul li {
    color: #fff6f6;
    font-size: 1.2rem;
    margin-bottom: 0.8rem;
@@ -348,6 +336,7 @@ main
 /** Configurações media query */
 /*? Configurações para desktop */
 @media (min-width: 768px) {
+   /*? Divisão do hambúrguer da navbar */
    header div#nav-hamburguer {
       display: none;
    }
