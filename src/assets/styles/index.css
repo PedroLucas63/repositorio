@@ -126,7 +126,7 @@ main {
 }
 
 /*? Configuração da seção home */
-main section#home {
+main div#home {
    align-items: center;
    display: flex;
    flex-direction: column;
@@ -135,35 +135,35 @@ main section#home {
 }
 
 /*? Configuração da figura da seção home */
-main section#home figure {
+main div#home figure {
    text-align: center;
 }
 
 /*? Configuração da imagem da seção home */
-main section#home figure img {
+main div#home figure img {
    width: 40%;
 }
 
 /*? Configuração legenda da figura da seção home */
-main section#home figure figcaption {
+main div#home figure figcaption {
    display: none;
 }
 
 /*? Configuração padrão do parágrafo da seção home */
-main section#home .home-data {
+main div#home .home-data {
    display: block;
    font-style: italic;
 }
 
 /*? Configuração do título da seção home */
-main section#home h2#home-title {
+main div#home h2#home-title {
    font-size: 2rem;
    font-weight: 500;
    text-align: center;
 }
 
 /*? Configuração do botão do título da seção home */
-main section#home h2#home-title button {
+main div#home h2#home-title button {
    background-color: transparent;
    border: none;
    color: #111344;
@@ -176,12 +176,12 @@ main section#home h2#home-title button {
 }
 
 /*? Configuração do botão do título da seção home  em hover */
-main section#home h2#home-title button:hover {
+main div#home h2#home-title button:hover {
    color: #52154e;
 }
 
 /*? Configuração do conteúdo da seção home */
-main section#home p#home-content {
+main div#home p#home-content {
    background-color: #111344;
    color: #eeeded;
    font-size: 1.5rem;
@@ -190,13 +190,13 @@ main section#home p#home-content {
 }
 
 /*? Configuração da span no conteúdo da seção home */
-main section#home p#home-content span {
+main div#home p#home-content span {
    color: #353885;
    font-size: 1.5rem;
 }
 
 /*? Configuração da seção de informações acadêmicas e profissionais */
-main section#informations {
+main div#informations {
    align-items: center;
    background-color: #111344;
    border-radius: 2rem 2rem 0rem 0rem;
@@ -207,18 +207,18 @@ main section#informations {
 }
 
 /*? Configuração das divisões de informações */
-main section#informations div {
+main div#informations div {
    margin-bottom: 2rem;
 }
 
 /*? Configuração da divisão de selecionar */
-main section#informations div#select-information {
+main div#informations div#select-information {
    display: flex;
    justify-content: center;
 }
 
 /*? Configuração das divisões de seletores */
-main section#informations div#select-information div {
+main div#informations div#select-information div {
    background-color: #07093b;
    border: none;
    color: #fff6f6;
@@ -231,33 +231,33 @@ main section#informations div#select-information div {
 }
 
 /*? Configuração das divisões de seletores em hover */
-main section#informations div#select-information div:hover {
+main div#informations div#select-information div:hover {
    background-color: #353885;
    color: #eeeded;
    transition: 0.25s;
 }
 
 /*? Configuração das divisões de seletores selecionados */
-main section#informations div#select-information div.selected {
+main div#informations div#select-information div.selected {
    background-color: #353885;
    color: #eeeded;
    transition: 0.25s;
 }
 
 /*? Configuração da divisão de seleção acadêmica */
-main section#informations div#select-information div#select-academic {
+main div#informations div#select-information div#select-academic {
    border-radius: 1rem 0rem 0rem 1rem;
    border-right: 1px solid #111344;
 }
 
 /*? Configuração da divisão de seleção profissional */
-main section#informations div#select-information div#select-professional {
+main div#informations div#select-information div#select-professional {
    border-left: 1px solid #111344;
    border-radius: 0rem 1rem 1rem 0rem;
 }
 
 /*? Configuração da divisão de conteúdos selecionados */
-main section#informations div#informations-content {
+main div#informations div#informations-content {
    align-items: center;
    display: flex;
    flex-direction: column;
@@ -266,13 +266,13 @@ main section#informations div#informations-content {
 }
 
 /*? Configuração da divisão de imagem em conteúdos selecionados */
-main section#informations div#informations-content div#informations-picture {
+main div#informations div#informations-content div#informations-picture {
    width: 100%;
 }
 
 /*? Configuração da figura em conteúdos selecionados */
 main
-   section#informations
+   div#informations
    div#informations-content
    div#informations-picture
    figure {
@@ -282,7 +282,7 @@ main
 /*? Configuração da imagem em conteúdos selecionados */
 
 main
-   section#informations
+   div#informations
    div#informations-content
    div#informations-picture
    img {
@@ -296,7 +296,7 @@ main
 
 /*? Configuração da legenda da imagem em conteúdos selecionados */
 main
-   section#informations
+   div#informations
    div#informations-content
    div#informations-picture
    figcaption {
@@ -304,20 +304,20 @@ main
 }
 
 /*? Configuração da divisão de lista de informações */
-main section#informations div#informations-content div.list-of-informations {
+main div#informations div#informations-content div.list-of-informations {
    height: 15rem;
    text-align: justify;
    width: 100%;
 }
 
 /*? Configuração da lista na divisão de lista de informações */
-main section#informations div#informations-content div.list-of-informations ul {
+main div#informations div#informations-content div.list-of-informations ul {
    list-style: none;
 }
 
 /*? Configuração do item de lista na lista da divisão de lista de informações */
 main
-   section#informations
+   div#informations
    div#informations-content
    div.list-of-informations
    ul
@@ -329,7 +329,7 @@ main
 
 /*? Configuração de abreviatura na divisão de lista de informações */
 main
-   section#informations
+   div#informations
    div#informations-content
    div.list-of-informations
    ul
@@ -378,22 +378,22 @@ main
    }
 
    /*? Conteúdo da seção home */
-   main section#home p#home-content {
+   main div#home p#home-content {
       width: 50%;
    }
 
    /*? Divisão de informações selecionada */
-   main section#informations div#select-information div {
+   main div#informations div#select-information div {
       width: 15rem;
    }
 
    /*? Divisão de conteúdo de informações */
-   main section#informations div#informations-content {
+   main div#informations div#informations-content {
       flex-direction: row;
    }
 
    /*? Divisão da lista de informações */
-   main section#informations div#informations-content div.list-of-informations {
+   main div#informations div#informations-content div.list-of-informations {
       height: auto;
       text-align: left;
    }
