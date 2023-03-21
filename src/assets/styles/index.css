@@ -16,9 +16,9 @@
 }
 
 html {
+   margin: 0 auto;
    min-width: 400px;
    max-width: 1500px;
-   margin: 0 auto;
 }
 
 /** Configuração do corpo da página */
@@ -29,15 +29,15 @@ body {
 /** Configurações do cabeçalho da página */
 /*? Configuração global do cabeçalho */
 header {
-   box-shadow: 0px -3px 10px 0px #040303;
+   top: 0;
    display: flex;
-   justify-content: space-between;
-   align-items: center;
    flex-wrap: wrap;
+   position: sticky;
+   align-items: center;
    padding: 0.2rem 1rem;
    background-color: #fff6f6;
-   position: sticky;
-   top: 0;
+   justify-content: space-between;
+   box-shadow: 0px -3px 10px 0px #040303;
 }
 
 /*? Configuração da divisão da logo */
@@ -68,14 +68,14 @@ header div#nav-hamburguer {
 
 /*? Configuração do botão do menu hambúrguer */
 header div#nav-hamburguer button {
+   border: none;
    display: flex;
-   justify-content: center;
-   align-items: center;
    width: 2.5rem;
    height: 2.5rem;
-   background-color: transparent;
-   border: none;
+   align-items: center;
    border-radius: 0.5rem;
+   justify-content: center;
+   background-color: transparent;
 }
 
 /*? Configuração do botão do menu hambúrguer com hover */
@@ -218,15 +218,15 @@ main section#informations div#select-information {
 
 /*? Configuração das divisões de seletores */
 main section#informations div#select-information div {
-   width: 30%;
-   margin: 2rem 0rem;
-   padding: 1rem 2rem;
-   transition: 0.25s;
    background-color: #07093b;
-   border: none;
+   padding: 1rem 2rem;
+   text-align: center;
+   margin: 2rem 0rem;
+   transition: 0.25s;
    font-size: 1.5rem;
    color: #fff6f6;
-   text-align: center;
+   border: none;
+   width: 30%;
 }
 
 /*? Configuração das divisões de seletores em hover */
@@ -305,6 +305,7 @@ main
 /*? Configuração da divisão de lista de informações */
 main section#informations div#informations-content div.list-of-informations {
    width: 100%;
+   height: 15rem;
 }
 
 /*? Configuração da lista na divisão de lista de informações */
@@ -353,7 +354,7 @@ main
    header div#nav-menu {
       display: block !important;
       position: relative;
-      width: 75vw;
+      width: 75%;
       height: 100%;
    }
 
@@ -387,5 +388,10 @@ main
    /*? Divisão de conteúdo de informações */
    main section#informations div#informations-content {
       flex-direction: row;
+   }
+
+   /*? Divisão da lista de informações */
+   main section#informations div#informations-content div.list-of-informations {
+      height: auto;
    }
 }
